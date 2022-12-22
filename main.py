@@ -10,7 +10,7 @@ try:
 except:
   print("This directory does not exist, creating one now...")
 
-# Create Folder for Size Sorter
+# Create Folder for Injection
 parent = os.getcwd()
 os.mkdir(os.path.join(parent, "Injection"))
 print("Directory created at: " + os.path.join(parent, "Injection"))
@@ -27,7 +27,7 @@ filename = "injection.txt"
 file = open(filename, 'w')
 
 # Creating Trojan Code
-file.write("import os\n# Injection Code Here")
+file.write("import os\n# Injection Code Here") # Injection redacted for safety reasons
 shutil.move(filename, "Injection.txt")
 os.rename('Injection.txt', 'Injection.py')
 file.close()
